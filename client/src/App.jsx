@@ -12,10 +12,13 @@ import "react-toastify/dist/ReactToastify.css";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { clarity } from 'react-microsoft-clarity';
+
+// clarity.init(kzjim6x6dt);
 
 const App = () => {
   const { themeMode } = useSelector((state) => state.themeMode);
-
+  // clarity.init(kzjim6x6dt);
   return (
     <ThemeProvider theme={themeConfigs.custom({ mode: themeMode })}>
       {/* config toastify */}
